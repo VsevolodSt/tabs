@@ -1,0 +1,26 @@
+.tab__btn{
+	display: inline-block;
+	vertical-align: top;
+	background: #ccc;
+	font-size: 18px;
+	text-transform: uppercase;
+	border: 1px solid #000;
+	text-decoration: none;
+}
+.tab__btn > a{
+	display: block;
+	padding: 10px;
+}
+
+.tab__btn--active{
+	background: orange;
+}
+
+.tab__inner{
+	border: 1px solid #000;
+	min-height: 150px;
+	display: none;
+}
+.tab__inner--active{
+	display: block;
+}
