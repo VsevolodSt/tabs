@@ -37,7 +37,6 @@ if(n <= 2) {
 n++
 } else {
 	n = 0;
-	alert(1);
 }
 switchTabs.call(tabNode[n]);
 
