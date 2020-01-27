@@ -3,10 +3,6 @@
 var tabNode = document.querySelectorAll('.tab__btn a');
 var blockNode = document.querySelectorAll('.tab__inner');
 
-
-
-
-
 var switchTabs = function(e){
 		//e.preventDefault();
 		removeActiveClass(tabNode, 'tab__btn--active');
@@ -32,6 +28,8 @@ for(var i = 0; i < tabNode.length; i++) {
 	tabNode[i].addEventListener('click', switchTabs);
 }
 
+
+/* auto switch tabs by timer*/
 var n = 0;
 setInterval( function(){
 if(n <= 2) {
@@ -39,55 +37,13 @@ if(n <= 2) {
 n++
 } else {
 	n = 0;
-	alert(1);
 }
 switchTabs.call(tabNode[n]);
 
 }, 2000);
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*way of forEach*/
 
 /*tabNode.forEach(function(item, i) {
   item.addEventListener('click', function(event){
@@ -110,7 +66,7 @@ var removeActiveClass = function(arr2, classN){
 };*/
 
 
-
+/* Bad way */
 
 // for (var i = 0; i < tabNode.length; i++){
 // 	tabNode[i].addEventListener('click', function(event){
